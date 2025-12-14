@@ -1,107 +1,82 @@
 <!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My First Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- CSS -->  <style>
+  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #667eea, #764ba2);
-      margin: 0;
-      padding: 0;
       color: #333;
     }
 
     header {
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(0, 0, 0, 0.75);
       color: white;
       padding: 30px 20px;
       text-align: center;
     }
 
+    nav {
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     main {
-      padding: 20px;
       max-width: 800px;
       margin: auto;
+      padding: 20px;
     }
 
     .card {
       background: white;
-      padding: 20px;
+      padding: 25px;
       margin-bottom: 20px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
-    }
-
-    button {
-      padding: 10px 18px;
-      border: none;
-      border-radius: 8px;
-      background: #667eea;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    button:hover {
-      background: #5a6fdc;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     }
 
     footer {
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       color: white;
       font-size: 14px;
       opacity: 0.9;
     }
   </style></head>
 <body>  <header>
-    <h1>Welcome to My Website 🌐</h1>
-    <p>This site uses HTML, CSS, and JavaScript</p>
-  </header>  <main>
-    <nav style="text-align:center; margin: 15px;">
-  <a href="about.html" style="color: white; font-weight: bold;">
-    About →
-  </a>
-    </nav>
+    <h1>Welcome 👋</h1>
+    <p>This is my personal website</p>
+  </header>  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </nav>  <main>
     <div class="card">
-      <h2>About Me</h2>
-      <p>I’m learning how to build interactive websites and publish them online.</p>
+      <h2>What This Site Is</h2>
+      <p>
+        This website is a simple project I built to learn how websites work.
+        It’s made using HTML and CSS and hosted on GitHub Pages.
+      </p>
     </div><div class="card">
-  <h2>Make It Interactive 👇</h2>
-  <p>Click the button to see JavaScript in action.</p>
-  <button onclick="changeText()">Click Me</button>
-  <p id="message" style="margin-top: 15px;"></p>
-</div>
-
-<div class="card">
-  <h2>What I’m Learning</h2>
-  <ul>
-    <li>HTML for structure</li>
-    <li>CSS for design & animations</li>
-    <li>JavaScript for interaction</li>
-  </ul>
+  <h2>Why I Built It</h2>
+  <p>
+    I wanted to create something real, simple, and clean while learning step by step.
+    This site will grow as I learn more.
+  </p>
 </div>
 
   </main>  <footer>
-    © 2025 · Built with ❤️ using GitHub Pages
-  </footer>  <!-- JavaScript -->  <script>
-    function changeText() {
-      const messages = [
-        "You just ran JavaScript! 🎉",
-        "Websites can be interactive ✨",
-        "You're officially a web builder 🚀",
-        "This button is powered by JavaScript"
-      ];
-
-      const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-      document.getElementById("message").textContent = randomMessage;
-    }
-  </script></body>
+    © 2025 · Built with care and curiosity
+  </footer></body>
 </html>
