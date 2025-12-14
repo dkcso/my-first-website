@@ -1,1 +1,102 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- CSS -->  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
 
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    button {
+      padding: 10px 18px;
+      border: none;
+      border-radius: 8px;
+      background: #667eea;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #5a6fdc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: white;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+  </style></head>
+<body>  <header>
+    <h1>Welcome to My Website 🌐</h1>
+    <p>This site uses HTML, CSS, and JavaScript</p>
+  </header>  <main>
+    <div class="card">
+      <h2>About Me</h2>
+      <p>I’m learning how to build interactive websites and publish them online.</p>
+    </div><div class="card">
+  <h2>Make It Interactive 👇</h2>
+  <p>Click the button to see JavaScript in action.</p>
+  <button onclick="changeText()">Click Me</button>
+  <p id="message" style="margin-top: 15px;"></p>
+</div>
+
+<div class="card">
+  <h2>What I’m Learning</h2>
+  <ul>
+    <li>HTML for structure</li>
+    <li>CSS for design & animations</li>
+    <li>JavaScript for interaction</li>
+  </ul>
+</div>
+
+  </main>  <footer>
+    © 2025 · Built with ❤️ using GitHub Pages
+  </footer>  <!-- JavaScript -->  <script>
+    function changeText() {
+      const messages = [
+        "You just ran JavaScript! 🎉",
+        "Websites can be interactive ✨",
+        "You're officially a web builder 🚀",
+        "This button is powered by JavaScript"
+      ];
+
+      const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+      document.getElementById("message").textContent = randomMessage;
+    }
+  </script></body>
+</html>
